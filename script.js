@@ -78,3 +78,41 @@ function prevSlide() {
 
 showSlides();
 
+
+
+   // Update baby count
+   document.getElementById('totalBabies').textContent = babies.length;
+  }
+  
+  // Initial display
+  displayBabies();
+
+  // payments javascript for the payments page
+  document.getElementById('paymentForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Retrieve selected payment type
+    const paymentType = document.getElementById('paymentType').value;
+
+    // Calculate amount based on payment type
+    let amount;
+    switch(paymentType) {
+        case 'halfDay':
+            amount = 10000;
+            break;
+        case 'fullDay':
+            amount = 15000;
+            break;
+        case 'monthly':
+            amount = "Contact us for monthly payment details.";
+            break;
+        default:
+            amount = "Invalid payment type.";
+    }
+
+    // Display amount
+    document.getElementById('paymentResult').innerHTML = `
+        <h3>Payment Amount</h3>
+        <p>${amount} UGX</p>
+    `;
+});

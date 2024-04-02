@@ -5,63 +5,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="/css/bootstrap/css/bootstrap.css">
-  <!-- <link rel="stylesheet" href="style.css"> -->
-  <link rel="stylesheet" href="index_style.css">
+  
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa; /* Light gray background */
+        }
+        
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        
+        header {
+            background-color: #ff69b4; /* Pink header */
+            color: white;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            height: 50px;
+            float: left;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            float: right;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        nav ul li a:hover {
+            color: #ffffff; /* White on hover */
+        }
+        
+        .card {
+            margin-top: 50px; /* Added margin */
+        }
+
+        .card-header {
+            background-color: #87cefa; /* Light blue header */
+            color: #fff; /* White text */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px; /* Added margin */
+        }
+
+        .form-control {
+            border: 2px solid #ff69b4; /* Pink border */
+            border-radius: 5px; /* Rounded corners */
+        }
+
+        .form-control:focus {
+            border-color: #4CAF50; /* Green border when focused */
+            box-shadow: none; /* Remove default box shadow */
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50; /* Green button */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px; /* Added margin */
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="container">
-          <img src="images/ab.jpg" alt="Daycare Logo" class="logo">
-          <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="programs.html">Programs</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="login_page.html">Administrator</a></li>
-            </ul>
-          </nav>
-    
+            <img src="images/ab.jpg" alt="Daycare Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="enroll.html">Enroll Now</a></li>
+                    <li><a href="login_page.html">Administrator</a></li>
+                </ul>
+            </nav>
         </div>
-      </header> 
+    </header> 
 
-      <div class="container-fluid">
-         <div class="card card-default">
-            <div class="card-header"><h2 class="card-title">Contact Us</h2></div>
-            <div class="card-body">
-                <div>
-                    <form>
-                        <div class="form-grouo">
-                        <label>Your First Name</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="form-grouo">
-                        <label>Your Second Name</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="form-grouo">
-                        <label>Your Phone Number</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label>Your Email</label>
-                        <input type="email" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label>Message</label>
-                        <textarea class="form-control"></textarea>
-                    </div>
-                    </form>
-                </div>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Contact Us</h2>
             </div>
-         </div>
-      </div>
-
-      <footer>
-        <div class="container">
-          <p>&copy; 2024 Our Daycare. All rights reserved.</p>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your First Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your Last Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="Message"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Submit" class="btn btn-primary">
+                    </div>
+                </form>
+            </div>
         </div>
-      </footer>
-    <script src="script.js"></script>
-  <script src="css/bootstrap/js/bootstrap.bundle.js"></script>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Our Daycare. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="css/bootstrap/js/bootstrap.bundle.js"></script>
 </body>
 </html>

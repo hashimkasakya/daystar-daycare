@@ -34,6 +34,46 @@
       margin-left: 250px;
       padding: 20px;
     }
+
+form div {
+    margin-bottom: 10px;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 8px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+#summaryCard {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
   </style>
 </head>
 <body>
@@ -46,12 +86,64 @@
   </div>
 
   <div id="content">
-   
-
+    <h2>Add Baby Information</h2>
+    <form id="babyForm">
+        <div>
+            <label for="babyName">Baby's Name:</label>
+            <input type="text" id="babyName" required>
+        </div>
+        <div>
+            <label for="gender">Gender:</label>
+            <select id="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" required>
+        </div>
+        <div>
+            <label for="location">Location:</label>
+            <input type="text" id="location" required>
+        </div>
+        <div>
+            <label for="broughtBy">Name of Person Bringing Baby:</label>
+            <input type="text" id="broughtBy" required>
+        </div>
+        <div>
+            <label for="arrivalTime">Time of Arrival:</label>
+            <input type="time" id="arrivalTime" required>
+        </div>
+        <div>
+            <label for="parentsNames">Parents' Names:</label>
+            <input type="text" id="parentsNames" required>
+        </div>
+        <div>
+            <label for="feePaid">Fee Paid:</label>
+            <input type="number" id="feePaid" required>
+        </div>
+        <div>
+            <label for="periodOfStay">Period of Stay:</label>
+            <input type="text" id="periodOfStay" required>
+        </div>
+        <div>
+            <label for="babyNumber">Baby Number:</label>
+            <input type="number" id="babyNumber" required>
+        </div>
+        <div>
+            <label for="setOffTime">Time Baby is Set Off:</label>
+            <input type="time" id="setOffTime" required>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+<h2>Babies Information</h2>
+       <div id="babyTable"></div>
+       <div id="summaryCard"></div>
 
 
   </div>
 
-  <script src="script.js"></script>
+  <script src="baby.js"></script>
 </body>
 </html>
