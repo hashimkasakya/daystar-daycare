@@ -54,11 +54,13 @@
         
         .card {
             margin-top: 50px; /* Added margin */
+            border: none; /* Removed border from the card */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added box shadow */
         }
 
         .card-header {
-            background-color: #87cefa; /* Light blue header */
-            color: #fff; /* White text */
+            background-color: #007bff; /* Blue header */
+            color: white;
             padding: 20px;
             text-align: center;
         }
@@ -68,26 +70,27 @@
         }
 
         .form-control {
-            border: 2px solid #ff69b4; /* Pink border */
+            border: 2px solid #007bff; /* Blue border */
             border-radius: 5px; /* Rounded corners */
         }
 
         .form-control:focus {
-            border-color: #4CAF50; /* Green border when focused */
+            border-color: #6c757d; /* Dark gray border when focused */
             box-shadow: none; /* Remove default box shadow */
         }
 
         input[type="submit"] {
-            background-color: #4CAF50; /* Green button */
+            background-color: #28a745; /* Green button */
             color: white;
             padding: 10px 20px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            transition: background-color 0.3s ease;
         }
 
         input[type="submit"]:hover {
-            background-color: #45a049; /* Darker green on hover */
+            background-color: #218838; /* Darker green on hover */
         }
 
         footer {
@@ -125,7 +128,7 @@
                 <h2 class="card-title">Contact Us</h2>
             </div>
             <div class="card-body">
-                <form>
+                <form method="POST">
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Your First Name">
                     </div>

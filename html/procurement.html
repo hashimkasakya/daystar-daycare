@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }  
+    .topnav {
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #6d1f1f;
+}
+    #content {
+      margin-left: 250px;
+      padding: 20px;
+    }
+  .card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+</style>
+
+  </style>
+</head>
+<body>
+  <div class="topnav">
+    <a href="admin.html">Admin</a>
+    <a href="sitters.html">Sitters</a>
+    <a href="babies.html">Babies</a>
+    <a href="payments.html">Payments</a>
+    <a href="procurement.html">Procurement Corner</a>
+  </div>
+
+  <div id="content">
+    
+    <h1>Daycare Project Procurement</h1>
+  
+    <div class="card" id="dollsCard">
+      <h2>Dolls</h2>
+      <p id="dollsQuantity"></p>
+    </div>
+    
+    <div class="card" id="educationalMaterialsCard">
+      <h2>Educational Materials</h2>
+      <p id="educationalMaterialsQuantity"></p>
+    </div>
+    
+    <div class="card" id="cleaningSupplyCard">
+      <h2>Cleaning Supplies</h2>
+      <p id="cleaningSupplyQuantity"></p>
+    </div>
+    
+    <div class="card" id="foodSnacksCard">
+      <h2>Food and Snacks</h2>
+      <p id="foodSnacksQuantity"></p>
+    </div>
+    
+    <div class="card" id="officeSuppliesCard">
+      <h2>Office Supplies</h2>
+      <p id="officeSuppliesQuantity"></p>
+    </div>
+  </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

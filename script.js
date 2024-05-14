@@ -82,37 +82,72 @@ showSlides();
 
    // Update baby count
    document.getElementById('totalBabies').textContent = babies.length;
-  }
+  
   
   // Initial display
   displayBabies();
 
-  // payments javascript for the payments page
-  document.getElementById('paymentForm').addEventListener('submit', function(event) {
-    event.preventDefault();
+ // JavaScript to handle form submission and populate the table
+ document.getElementById('paymentForm').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent the default form submission
 
-    // Retrieve selected payment type
-    const paymentType = document.getElementById('paymentType').value;
+  // Retrieve form data
+  var childName = document.getElementById('childName').value;
+  var childAge = document.getElementById('childAge').value;
+  var periodOfStay = document.getElementById('periodOfStay').value;
+  var childId = document.getElementById('childId').value;
+  var contact = document.getElementById('contact').value;
+  var address = document.getElementById('address').value;
+  var payerName = document.getElementById('payerName').value;
+  var paymentDate = document.getElementById('paymentDate').value;
+  var paymentTime = document.getElementById('paymentTime').value;
+  var sitterId = document.getElementById('sitterId').value;
+  var sitterPayment = document.getElementById('sitterPayment').value;
+  var babyHalfDay = document.getElementById('babyHalfDay').value;
+  var babyFullDay = document.getElementById('babyFullDay').value;
 
-    // Calculate amount based on payment type
-    let amount;
-    switch(paymentType) {
-        case 'halfDay':
-            amount = 10000;
-            break;
-        case 'fullDay':
-            amount = 15000;
-            break;
-        case 'monthly':
-            amount = "Contact us for monthly payment details.";
-            break;
-        default:
-            amount = "Invalid payment type.";
-    }
+  // Create a new row in the table
+  var table = document.getElementById('paymentTable').getElementsByTagName('tbody')[0];
+  var newRow = table.insertRow();
 
-    // Display amount
-    document.getElementById('paymentResult').innerHTML = `
-        <h3>Payment Amount</h3>
-        <p>${amount} UGX</p>
-    `;
+  // Populate the row with form data
+  newRow.innerHTML = `
+    <td>${childName}</td>
+    <td>${childAge}</td>
+    <td>${periodOfStay}</td>
+    <td>${childId}</td>
+    <td>${contact}</td>
+    <td>${address}</td>
+    <td>${payerName}</td>
+    <td>${paymentDate}</td>
+    <td>${paymentTime}</td>
+    <td>${sitterId}</td>
+    <td>${sitterPayment}</td>
+    <td>${babyHalfDay}</td>
+    <td>${babyFullDay}</td>
+  `;
+
+  // Clear the form
+  document.getElementById('paymentForm').reset();
+
+  // Optionally, you can hide the modal after form submission
+  document.getElementById('paymentModal').style.display = 'none';
 });
+
+
+
+
+// Function to update the quantity text in the cards
+function updateQuantity(category, quantity) {
+  document.getElementById(category + "Quantity").innerText = "Quantity: " + quantity;
+}
+
+// Update quantities in the cards
+updateQuantity("dolls", quantities.dolls);
+updateQuantity("educationalMaterials", quantities.educationalMaterials);
+updateQuantity("cleaningSupply", quantities.cleaningSupply);
+updateQuantity("foodSnacks", quantities.foodSnacks);
+updateQuantity("officeSupplies", quantities.officeSupplies);
+
+
+
