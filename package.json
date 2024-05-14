@@ -1,0 +1,23 @@
+{
+  "name": "daystar-daycare-1",
+  "version": "1.0.0",
+  "description": "This is my Daystar Daycare project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hashimkasakya/daystar-daycare1.git"
+  },
+  "author": "kasakya hashim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hashimkasakya/daystar-daycare1/issues"
+  },
+  "homepage": "https://github.com/hashimkasakya/daystar-daycare1#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
