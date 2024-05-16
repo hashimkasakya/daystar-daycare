@@ -1,0 +1,112 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('/images/2.jpg'); 
+  background-size: cover;
+  background-position: center;
+}
+.topnav {
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #6d1f1f;
+}
+
+#content {
+  padding: 20px;
+}
+/* Add to the existing <style> tag */
+.form-group {
+margin-bottom: 15px; /* Increase spacing between form elements */
+}
+
+.form-group input,
+.form-group button {
+border: 1px solid #ccc; /* Consistent border styling */
+border-radius: 4px; /* Rounded corners for inputs and button */
+}
+
+.form-group button {
+background-color: #007bff; /* Primary button color */
+color: white; /* Text color for button */
+padding: 10px 15px; /* Padding for button */
+margin-top: 10px; /* Space above the button */
+cursor: pointer; /* Pointer cursor on hover */
+border: none; /* Remove border from button */
+}
+
+.form-group button:hover {
+background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Placeholder styling for modern browsers */
+::placeholder {
+color: #bbb; /* Light gray text */
+opacity: 1; /* Make placeholder fully visible */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+.modal-content {
+padding: 15px; /* Smaller padding on smaller screens */
+}
+}
+
+
+#paymentResult {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+/* Example usage of .card class */
+.card {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Improved box shadow */
+}
+/* Example style for close button */
+.close {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  color: #000;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}
+tr:hover {background-color: #ddd;}
+.validation-error {
+  color: red;
+  margin-top: 5px;
+}

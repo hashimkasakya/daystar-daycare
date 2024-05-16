@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard</title>
+<link rel="stylesheet" href="../public/css/styles/payments.css">
+</head>
+<body>
+<div class="topnav">
+<a href="admin.html">Admin</a>
+<a href="sitters.html">Sitters</a>
+<a href="babies.html">Babies</a>
+<a href="payments.html">Payments</a>
+<a href="procurement.html">Procurement Corner</a>
+</div>
+
+<div id="content">
+<div class="card">
+<div class="modal" id="paymentModal">
+<div class="modal-content">
+<span class="close">&times;</span>
+<h1>Payment Form</h1>
+<form id="paymentForm">
+<div class="form-group">
+<label for="childName">Name of Child</label>
+<input id="childName" type="text" name="childName" placeholder="Enter the child's name">
+</div>
+<div class="form-group">
+<label for="childAge">Age of Child</label>
+<input id="childAge" type="number" name="childAge" min="0" placeholder="Enter the child's age">
+</div>
+<div class="form-group">
+<label for="periodOfStay">Period of Stay (Hours)</label>
+<input id="periodOfStay" type="number" name="periodOfStay" min="0" placeholder="Enter hours of stay">
+</div>
+<div class="form-group">
+<label for="childId">ID of Child</label>
+<input id="childId" type="text" name="childId" placeholder="Enter the child's ID">
+</div>
+<div class="form-group">
+<label for="contact">Contact</label>
+<input id="contact" type="tel" name="contact" placeholder="Enter contact number">
+</div>
+<div class="form-group">
+<label for="address">Address</label>
+<input id="address" type="text" name="address" placeholder="Enter address">
+</div>
+<div class="form-group">
+<label for="payerName">Name of Person Paying</label>
+<input id="payerName" type="text" name="payerName" placeholder="Enter payer's name">
+</div>
+<div class="form-group">
+<label for="paymentDate">Date</label>
+<input id="paymentDate" type="date" name="paymentDate">
+</div>
+<div class="form-group">
+<label for="paymentTime">Time</label>
+<input id="paymentTime" type="time" name="paymentTime">
+</div>
+<div class="form-group">
+<label for="sitterId">ID of Sitter</label>
+<input id="sitterId" type="text" name="sitterId" placeholder="Enter sitter's ID">
+</div>
+<div class="form-group">
+<label for="sitterPayment">Payment for Sitters (UGX)</label>
+<input id="sitterPayment" type="number" name="sitterPayment" min="0" placeholder="Enter amount">
+</div>
+<div class="form-group">
+<label for="babyHalfDay">Half Day Babysitting (UGX)</label>
+<input id="babyHalfDay" type="number" name="babyHalfDay" min="0" placeholder="Enter amount">
+</div>
+<div class="form-group">
+<label for="babyFullDay">Full Day Babysitting (UGX)</label>
+<input id="babyFullDay" type="number" name="babyFullDay" min="0" placeholder="Enter amount">
+</div>
+<div class="form-group">
+<button type="submit">Make Payment</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+<table id="paymentTable">
+<thead>
+<tr>
+<th>Name of Child</th>
+<th>Age of Child</th>
+<th>Period of Stay (Hours)</th>
+<th>ID of Child</th>
+<th>Contact</th>
+<th>Address</th>
+<th>Name of Person Paying</th>
+<th>Date</th>
+<th>Time</th>
+<th>ID of Sitter</th>
+<th>Payment for Sitters (UGX)</th>
+<th>Half Day Babysitting (UGX)</th>
+<th>Full Day Babysitting (UGX)</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</div>
+
+<div id="paymentResult"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

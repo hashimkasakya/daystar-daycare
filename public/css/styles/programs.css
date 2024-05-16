@@ -1,0 +1,94 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa; /* Light gray background */
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+header {
+  background-color: #ff69b4; /* Pink header */
+  color: white;
+  padding: 20px 0;
+}
+
+.logo {
+  height: 50px;
+  float: left;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #ffffff; /* White on hover */
+}
+
+#banner {
+  background-color: #87cefa; /* Light blue banner */
+  padding: 100px 0;
+  text-align: center;
+  color: #ffffff; /* White text */
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+#services {
+  background-color: #ffa500; /* Orange services section */
+  padding: 50px 0;
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  color: #ff69b4; /* Pink heading */
+}
+
+#programList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#programList li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  color: #333; /* Dark gray text */
+}
+
+#programList li:last-child {
+  border-bottom: none;
+}

@@ -1,0 +1,28 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Sign Up
+  link(rel='stylesheet' href='/css/styles/signup.css')
+.container-fluid.col-lg-12
+  h2 Sign Up
+  form#signupForm(action="signup" method="POST")
+    label(for='username') Username:
+    br
+    input#username(type='text' name='username')
+    br
+    label(for='password') Password:
+    br
+    input#password(type='password' name='password')
+    br
+    button#signupBtn(type='submit') Sign Up
+  script.
+    document.getElementById("signupForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form submission
+    // Fetch username and password
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    // Here you can perform additional validation before signup if needed
+    // For demonstration purposes, just redirect to login page
+    window.location.href = "login_page.html";
+    });

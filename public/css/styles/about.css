@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Daystar Daycare</title>
-<link rel="stylesheet" href="/css/bootstrap/css/bootstrap.css">
-<style>
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -117,36 +110,3 @@ h2 {
 .button:hover {
     background-color: #ff1493; /* Dark pink on hover */
 }
-</style>
-</head>
-<body>
-<header>
-    <div class="container">
-        <img src="images/ab.jpg" alt="Daycare Logo" class="logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="programs.html">Programs</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="enroll.html">Enroll Now</a></li>
-                <li><a href="login_page.html">Administrator</a></li>
-                <li><a href="about.html">About us</a></li>
-            </ul>
-        </nav>
-    </div>
-</header> 
-
-<section id="banner">
-    <div class="container">
-        
-<footer>
-    <div class="container">
-        <p>&copy; 2024 Our Daycare. All rights reserved.</p>
-    </div>
-</footer>
-
-<script>
-</script>
-<script src="css/bootstrap/js/bootstrap.bundle.js"></script>
-</body>
-</html>

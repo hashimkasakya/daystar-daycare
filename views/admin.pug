@@ -1,0 +1,33 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Admin Dashboard
+  link(rel='stylesheet' href='/css/styles/admin.css')
+.topnav
+  a(href='/admin') Admin
+  a(href='sitters.html') Sitters
+  a(href='../baby/registerbaby') Babies
+  a(href='payments.html') Payments
+  a(href='procurement.html') Procurement Corner
+  a(href='login_page.html' style='float: right;') Logout
+#content
+  // Content will be loaded dynamically here
+  h1(style='text-align: center;') WELCOME TO THE ADMIN DASHBOARD
+  h2 Daycare Project Procurement
+  #dollsCard.card
+    h3 Dolls
+    p#dollsQuantity Quantity: 
+  #educationalMaterialsCard.card
+    h3 Educational Materials
+    p#educationalMaterialsQuantity Quantity: 
+  #cleaningSupplyCard.card
+    h3 Cleaning Supplies
+    p#cleaningSupplyQuantity Quantity: 
+  #foodSnacksCard.card
+    h3 Food and Snacks
+    p#foodSnacksQuantity Quantity: 
+  #officeSuppliesCard.card
+    h3 Office Supplies
+    p#officeSuppliesQuantity Quantity: 
+script(src='script.js')

@@ -1,0 +1,80 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Admin Dashboard
+  link(rel='stylesheet' href='/css/styles/payments.css')
+.topnav
+  a(href='admin.html') Admin
+  a(href='sitters.html') Sitters
+  a(href='babies.html') Babies
+  a(href='payments.html') Payments
+  a(href='procurement.html') Procurement Corner
+  a(href='login_page.html' style='float: right;') Logout
+#content
+  .card
+    #paymentModal.modal
+      .modal-content
+        span.close &times;
+        h1 Payment Form
+        form#paymentForm
+          .form-group
+            label(for='childName') Name of Child
+            input#childName(type='text' name='childName' placeholder="Enter the child's name")
+          .form-group
+            label(for='childAge') Age of Child
+            input#childAge(type='number' name='childAge' min='0' placeholder="Enter the child's age")
+          .form-group
+            label(for='periodOfStay') Period of Stay (Hours)
+            input#periodOfStay(type='number' name='periodOfStay' min='0' placeholder='Enter hours of stay')
+          .form-group
+            label(for='childId') ID of Child
+            input#childId(type='text' name='childId' placeholder="Enter the child's ID")
+          .form-group
+            label(for='contact') Contact
+            input#contact(type='tel' name='contact' placeholder='Enter contact number')
+          .form-group
+            label(for='address') Address
+            input#address(type='text' name='address' placeholder='Enter address')
+          .form-group
+            label(for='payerName') Name of Person Paying
+            input#payerName(type='text' name='payerName' placeholder="Enter payer's name")
+          .form-group
+            label(for='paymentDate') Date
+            input#paymentDate(type='date' name='paymentDate')
+          .form-group
+            label(for='paymentTime') Time
+            input#paymentTime(type='time' name='paymentTime')
+          .form-group
+            label(for='sitterId') ID of Sitter
+            input#sitterId(type='text' name='sitterId' placeholder="Enter sitter's ID")
+          .form-group
+            label(for='sitterPayment') Payment for Sitters (UGX)
+            input#sitterPayment(type='number' name='sitterPayment' min='0' placeholder='Enter amount')
+          .form-group
+            label(for='babyHalfDay') Half Day Babysitting (UGX)
+            input#babyHalfDay(type='number' name='babyHalfDay' min='0' placeholder='Enter amount')
+          .form-group
+            label(for='babyFullDay') Full Day Babysitting (UGX)
+            input#babyFullDay(type='number' name='babyFullDay' min='0' placeholder='Enter amount')
+          .form-group
+            button(type='submit') Make Payment
+  table#paymentTable
+    thead
+      tr
+        th Name of Child
+        th Age of Child
+        th Period of Stay (Hours)
+        th ID of Child
+        th Contact
+        th Address
+        th Name of Person Paying
+        th Date
+        th Time
+        th ID of Sitter
+        th Payment for Sitters (UGX)
+        th Half Day Babysitting (UGX)
+        th Full Day Babysitting (UGX)
+    tbody
+#paymentResult
+script(src='script.js')

@@ -1,0 +1,31 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Admin Dashboard
+  link(rel='stylesheet' href='/css/styles/procuments.css')
+.topnav
+  a(href='admin.html') Admin
+  a(href='sitters.html') Sitters
+  a(href='babies.html') Babies
+  a(href='payments.html') Payments
+  a(href='procurement.html') Procurement Corner
+  a(href='login_page.html' style='float: right;') Logout
+#content
+  h1 Daycare Project Procurement
+  #dollsCard.card
+    h2 Dolls
+    p#dollsQuantity
+  #educationalMaterialsCard.card
+    h2 Educational Materials
+    p#educationalMaterialsQuantity
+  #cleaningSupplyCard.card
+    h2 Cleaning Supplies
+    p#cleaningSupplyQuantity
+  #foodSnacksCard.card
+    h2 Food and Snacks
+    p#foodSnacksQuantity
+  #officeSuppliesCard.card
+    h2 Office Supplies
+    p#officeSuppliesQuantity
+script(src='script.js')

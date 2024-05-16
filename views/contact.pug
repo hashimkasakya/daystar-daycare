@@ -1,0 +1,44 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Contact
+  link(rel='stylesheet' href='/css/bootstrap/css/bootstrap.css')
+  link(rel='stylesheet' href='/css/styles/contact.css')
+header
+  .container
+    img.logo(src='images/ab.jpg' alt='Daycare Logo')
+    nav
+      ul
+        li
+          a(href='index.html') Home
+        li
+          a(href='programs.html') Programs
+        li
+          a(href='contact.html') Contact
+        li
+          a(href='enroll.html') Enroll Now
+        li
+          a(href='login_page.html') Administrator
+.container
+  .card
+    .card-header
+      h2.card-title Contact Us
+    .card-body
+      form(method='POST')
+        .form-group
+          input.form-control(type='text' placeholder='Your First Name')
+        .form-group
+          input.form-control(type='text' placeholder='Your Last Name')
+        .form-group
+          input.form-control(type='text' placeholder='Your Phone Number')
+        .form-group
+          input.form-control(type='email' placeholder='Your Email')
+        .form-group
+          textarea.form-control(placeholder='Message')
+        .form-group
+          input.btn.btn-primary(type='submit' value='Submit')
+footer
+  .container
+    p &copy; 2024 Our Daycare. All rights reserved.
+script(src='css/bootstrap/js/bootstrap.bundle.js')

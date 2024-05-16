@@ -1,0 +1,98 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Sitter Information Form
+  link(rel='stylesheet' type='text/css' href='sitters.css')
+  link(rel='stylesheet' href='/css/styles/register_sitters.css')
+.topnav
+  a(href='admin.html') Admin
+  a(href='sitters.html') Sitters
+  a(href='babies.html') Babies
+  a(href='payments.html') Payments
+  a(href='procurement.html') Procurement Corner
+  a(href='login_page.html' style='float: right;') Logout
+#content
+  .card
+    h2 Sitter Information Form
+    form#sitterForm(method='POST' action='/registersitter')
+      label(for='name') Name
+      input#name(type='text' name='name')
+      label(for='location') Location
+      input#location(type='text' name='location')
+      label(for='dob') Date of Birth
+      input#dob(type='date' name='dob')
+      label(for='gender') Gender
+      select#gender(name='gender')
+        option(value='male') Male
+        option(value='female') Female
+      label(for='nextOfKin') Next of Kin
+      input#nextOfKin(type='text' name='nextOfKin')
+      label(for='nin') NIN
+      input#nin(type='text' name='nin')
+      label(for='recommender') Recommender&apos;s Name
+      input#recommender(type='text' name='recommender')
+      label(for='religion') Religion
+      input#religion(type='text' name='religion')
+      label(for='education') Level of Education
+      input#education(type='text' name='education')
+      label(for='sitterNumber') Sitter Number
+      input#sitterNumber(type='text' name='sitterNumber')
+      label(for='contacts') Contacts
+      input#contacts(type='text' name='contacts')
+      input(type='submit' value='Submit')
+//
+  <div class="container">
+  <h2>Sitter Information Table</h2>
+  <table id="sitterTable">
+  <thead>
+  <tr>
+  <th>Name</th>
+  <th>Location</th>
+  <th>Date of Birth</th>
+  <th>Gender</th>
+  <th>Next of Kin</th>
+  <th>Nin</th>
+  <th>Recommender</th>
+  <th>Religion</th>
+  <th>Education</th>
+  <th>Sitter Number</th>
+  <th>Contacts</th>
+  </tr>
+  </thead>
+  <tbody id="sitterData"></tbody>
+  </table>
+script.
+  // const sitterForm = document.getElementById('sitterForm');
+  // const sitterTableBody = document.getElementById('sitterData');
+  // sitterForm.addEventListener('submit', function(event) {
+  //   event.preventDefault();
+  //   // Collect form data
+  //   const formData = new FormData(sitterForm);
+  //   const sitterInfo = {};
+  //   formData.forEach((value, key) => {
+  //     sitterInfo[key] = value;
+  //   });
+  //   // Store data in local storage
+  //   let sitters = JSON.parse(localStorage.getItem('sitters')) || [];
+  //   sitters.push(sitterInfo);
+  //   localStorage.setItem('sitters', JSON.stringify(sitters));
+  //   // Clear form fields
+  //   sitterForm.reset();
+  //   // Display data in table
+  //   displaySitterData();
+  // });
+  // function displaySitterData() {
+  //   const sitters = JSON.parse(localStorage.getItem('sitters')) || [];
+  //   sitterTableBody.innerHTML = '';
+  //   sitters.forEach(sitter => {
+  //     const row = document.createElement('tr');
+  //     Object.values(sitter).forEach(value => {
+  //       const cell = document.createElement('td');
+  //       cell.textContent = value;
+  //       row.appendChild(cell);
+  //     });
+  //     sitterTableBody.appendChild(row);
+  //   });
+  // }
+  // displaySitterData();

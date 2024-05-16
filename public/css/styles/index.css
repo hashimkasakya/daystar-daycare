@@ -1,0 +1,106 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+header {
+  background-color: #ff8c00; /* Dark orange header */
+  color: white;
+  padding: 20px 0;
+}
+.logo {
+  height: 50px;
+  float: left;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: #ffffff; /* White on hover */
+}
+#banner {
+  background-color: #ff69b4; /* Deep pink banner */
+  padding: 100px 0;
+  text-align: center;
+  color: white;
+}
+.slider {
+  position: relative;
+}
+.slides {
+  display: none;
+}
+.slides img {
+  width: 100%;
+}
+.prev, .next {
+  background-color: #ff1493; /* Dark pink buttons */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.prev:hover, .next:hover {
+  background-color: #e6005c; /* Lighter pink on hover */
+}
+#services {
+  background-color: #adff2f; /* Bright green services section */
+  padding: 50px 0;
+  text-align: center;
+}
+footer {
+  background-color: #87ceeb; /* Sky blue footer */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+.testimonials {
+  background-color: #afeeee; /* Pale blue testimonials section */
+  padding: 50px 0;
+  text-align: center;
+}
+.card {
+  background-color: #ffffff; /* White cards */
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+h2 {
+  text-align: center;
+  color: #ff69b4; /* Deep pink section titles */
+}
+.section-text {
+  color: #ffa500; /* Orange section text */
+}
+.button {
+  background-color: #ff69b4; /* Pink buttons */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.button:hover {
+  background-color: #ff1493; /* Dark pink on hover */
+}

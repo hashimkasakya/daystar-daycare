@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  box-sizing: border-box;
+  background-image: url('./images/6.jpg'); 
+  background-size: cover;
+  background-position: center;
+}
+.topnav {
+background: linear-gradient(to right, #0072ff, #00c6ff);
+overflow: hidden;
+}
+
+.topnav a {
+float: left;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+.topnav a:hover {
+background-color: #6d1f1f;
+}
+
+#content {
+  margin-left: 250px;
+  padding: 20px;
+}
+.card {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Improved box shadow */
+}
+form div {
+margin-bottom: 10px;
+}
+
+form input, form select {
+width: 100%;
+padding: 8px;
+box-sizing: border-box;
+}
+
+form button {
+padding: 10px 20px;
+background-color: #45a049;
+color: #fff;
+border: none;
+cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+#summaryCard {
+margin-top: 20px;
+padding: 10px;
+background-color: #f2f2f2;
+}

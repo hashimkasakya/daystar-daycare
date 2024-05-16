@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Doll</title>
+<link rel="stylesheet" href="/public/css/styles/dollstore.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Add a New Doll</h1>
+        <form action="/add-doll" method="POST">
+            <label for="dollsname">Doll's Name:</label>
+            <input type="text" id="dollsname" name="dollsname">
+            
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price">
+            
+            <label for="number">Number of Dolls:</label>
+            <input type="number" id="number" name="number">
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

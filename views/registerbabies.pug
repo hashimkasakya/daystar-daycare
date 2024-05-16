@@ -1,0 +1,61 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Admin Dashboard
+  // <link rel="stylesheet" href="./babies.css">
+  link(rel='stylesheet' href='/css/styles/register_babies.css')
+.topnav
+  a(href='admin.html') Admin
+  a(href='sitters.html') Sitters
+  a(href='babies.html') Babies
+  a(href='payments.html') Payments
+  a(href='procurement.html') Procurement Corner
+  a(href='login_page.html' style='float: right;') Logout
+#content
+  .card
+    h2 Add Baby Information
+    form#babyForm(method='POST' action='/baby/registerbaby')
+      div
+        label(for='babyName') Baby&apos;s Name:
+        input#babyName(type='text' name='babyName')
+      div
+        label(for='gender') Gender:
+        select#gender(name='gender')
+          option(value='male') Male
+          option(value='female') Female
+      div
+        label(for='age') Age:
+        input#age(type='number' name='age')
+      div
+        label(for='location') Location:
+        input#location(type='text' name='location')
+      div
+        label(for='broughtBy') Name of Person Bringing Baby:
+        input#broughtBy(type='text' name='broughtBy')
+      div
+        label(for='arrivalTime') Time of Arrival:
+        input#arrivalTime(type='time' name='arrivalTime')
+      div
+        label(for='parentsNames') Parents&apos; Names:
+        input#parentsNames(type='text' name='parentsNames')
+      div
+        label(for='feePaid') Fee Paid:
+        input#feePaid(type='number' name='feePaid')
+      div
+        label(for='periodOfStay') Period of Stay:
+        input#periodOfStay(type='text' name='periodOfStay')
+      div
+        label(for='babyNumber') Baby Number:
+        input#babyNumber(type='number' name='babyNumber')
+      div
+        label(for='setOffTime') Time Baby is Set Off:
+        input#setOffTime(type='time' name='setOffTime')
+      button(type='submit') Submit
+  //
+    <div class="table-container">
+    <h2>Babies Information</h2>
+    <div id="babyTable"></div>
+    <div id="summaryCard"></div>
+    </div>
+// <script src="baby.js"></script>

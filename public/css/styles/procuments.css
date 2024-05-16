@@ -1,0 +1,33 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}  
+.topnav {
+background: linear-gradient(to right, #0072ff, #00c6ff);
+overflow: hidden;
+}
+
+.topnav a {
+float: left;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+.topnav a:hover {
+background-color: #6d1f1f;
+}
+#content {
+  margin-left: 250px;
+  padding: 20px;
+}
+.card {
+background-color: #f4f4f4;
+padding: 20px;
+margin-bottom: 20px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}

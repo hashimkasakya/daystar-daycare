@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<link rel="stylesheet" href="../public/css/styles/">
+</head>
+<body>
+
+<form id="loginForm" method="POST">
+<h2>Login</h2>
+<label for="username">Username:</label>
+<input type="text" id="username" required>
+<label for="password">Password:</label>
+<input type="password" id="password" required>
+<input type="submit" value="Login">
+<div class="signup-link">
+Don't have an account? <a href="/signup" id="signupLink">Sign up</a>
+</div>
+</form>
+
+<script>
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+event.preventDefault(); // Prevent form submission
+
+// Get input values
+var username = document.getElementById('username').value;
+var password = document.getElementById('password').value;
+
+// Check if username and password match
+if (username === "admin" && password === "admin1") {
+// Store user information in local storage
+localStorage.setItem("loggedIn", true);
+localStorage.setItem("username", username);
+
+// Redirect to admin page
+window.location.href = "admin.html";
+} else {
+alert("Invalid username or password. Please try again.");
+}
+});
+</script>
+
+</body>
+</html>
