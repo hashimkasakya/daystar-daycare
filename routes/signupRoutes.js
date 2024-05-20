@@ -6,14 +6,20 @@ const signupModule = require("../models/signupModel");
 
 // routes
 
-router.get("/signup", (req,res)=>{
+router.get('/signup', (req,res)=>{
     res.render("signup");
 });
-
-router.post("/signup", (req,res)=>{
-    const signup = new signupModule(req.body);
+// Applying sync await function
+router.post('/signup', async (req,res) => {
+ try{
+    const signup = new signupModel(req.body)
     console.log(signup);
-    signup.save();
+    await sitter.save();
+    res.send("New signup Successful")
+ }catch(error){
+    res.status(400).send("Soory! Something went wrong");
+    console.log("Error Signing up Try again Later", error);
+ }
 });
 
 module.exports=router;

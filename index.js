@@ -13,7 +13,7 @@ const babyRegistrationRoutes = require("./routes/babyRegistrationRoutes") ;
 const sitterRegistrationRoutes = require("./routes/sitterRegistrationRoutes");
 const signupRoutes = require("./routes/signupRoutes");
 const dollstoreRoutes = require("./routes/dollstoreRoutes");
-// const authenticationRoutes = require("./routes/authenticationRoutes");
+
 // // INSTANTIATIONS
 
 const app = express();
@@ -62,13 +62,6 @@ app.get("/admin", (req,res)=>{
   res.render("login_page");
 });
 
-// app.get("/baby/registerbaby", (req, res) => {
-//   res.render("registerbabies");
-// });
-
-// app.get("/about", (req,res)=>{
-//   res.render("about");
-// });
 
 // use imported routes 
 
@@ -76,7 +69,7 @@ app.use("/", babyRegistrationRoutes);
 app.use("/", sitterRegistrationRoutes);
 app.use("/", signupRoutes);
 app.use("/", dollstoreRoutes);
-// app.use("/", authenticationRoutes);
+
 
 
 // FOR INVALID ROUTES
