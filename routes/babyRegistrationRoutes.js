@@ -1,26 +1,27 @@
 const express = require("express");
 const router = express.Router();
 
-//IMPORT MODEL
-const babiesRegistrationModel = require("../models/babyRegistrationModel");
+// import models
 
-//routes
+const babyRegistrationModel = require("../models/babyRegistrationModel");
 
-router.get("/baby/registerbaby",  (req, res) => {
-    res.render("registerbabies");
-  });
-  // Applying async await function
+
+// Routes
+
+router.get('/baby/registerbaby', (req,res)=>{
+    res.render("registersitters");
+});
+// Applying sync await function
 router.post('/baby/registerbaby', async (req,res) => {
-  try {
-    const baby = new babiesRegistrationModel(req.body)
-    console.log(baby);
+ try{
+    const baby = new babyRegistrationModel(req.body)
+    console.log(sitter);
     await baby.save();
-    res.send("Baby succefully registered")
-  } catch(error) { //incase of errors
-    res.status(400).send("Sorry! something went wrong");
-    console.log("Error registering the baby..", error);
-  }
-  });
-  
+    res.send("baby successfully Saved")
+ }catch(error){
+    res.status(400).send("Soory! Something went wrong");
+    console.log("Error registering the baby", error);
+ }
+});
+
 module.exports = router;
-  
